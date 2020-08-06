@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/cms/index.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cms/pages/backEnd/changeOrderStatus.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cms/pages/backEnd/changeProduct.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cms/pages/frontEnd/changeProducts.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pages/backEnd/addToCart.php" charset="UTF-8" />
+  </component>
+</project>

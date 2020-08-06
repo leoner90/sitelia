@@ -1,0 +1,83 @@
+@import 'variables';
+
+.cms-order-view-print-logo-img {
+  display: block;
+  filter: grayscale(100%);
+  margin: 3% auto;
+  width: 10%;
+}
+
+.order-completed-btn {
+  display: block;
+  font-size: $order-completed-btn-font-size;
+
+  @include for-mobile-design() {
+    font-size: $order-completed-btn-mobile-font-size;
+  }
+}
+
+.orderlist {
+  border-bottom: 1px solid $cms-order-page-border-color;
+  padding: 10px 10%;
+
+  @include for-mobile-design() {
+    padding: 2px 20px;
+  }
+
+  div {
+    @include for-mobile-design() {
+      padding: 0;
+    }
+  }
+}
+
+.cms-order-view-glyphicon {
+  font-size: $order-completed-btn-font-size;
+  padding: 1px;
+
+  @include for-mobile-design() {
+    font-size: $order-completed-btn-mobile-font-size;
+  }
+}
+
+.cms-orderview-customer-info {
+  border-bottom: 1px solid $cms-order-page-border-color;
+  padding: 10px;
+  position: relative;
+}
+
+.cms-orderview-customer-data {
+  position: absolute;
+  right: 10px;
+}
+
+.order-sign {
+  padding: 100px 30px 0;
+
+  @include for-mobile-design() {
+    padding: 50px 0 0;
+  }
+}
+//AT PRINTING
+@media print
+{
+  .cms-main-bar {
+    width: 100%;
+  }
+
+  .orderlist {
+    padding: 10px;
+  }
+
+  .noprint {
+    display: none;
+  }
+
+  .order-sign {
+    bottom: 3%;
+    left: 10%;
+    padding: 100px 0 0;
+    position: absolute;
+    right: 10%;
+  }
+}

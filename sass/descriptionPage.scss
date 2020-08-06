@@ -1,0 +1,111 @@
+@import 'variables';
+
+.description-content {
+  background-color: $description-content-bg-color;
+  border-radius: 5px;
+  padding: 2% 5%;
+}
+
+.add-to-basket-preloader {
+  background-color: $add-to-cart-preloader-bg-color;
+  border-radius: 10px;
+  bottom: 0;
+  display: none;
+  left: 0;
+  margin: 3% 18%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 999;
+
+  @include for-mobile-design() {
+    margin: 0;
+  }
+}
+
+.spinner-for-basket-preloader {
+  background: url('../img/other/menuAndOrderBascetSpinner.gif')  0 / 100% 100% no-repeat;
+  height: 25%;
+  left: 50%;
+  margin: 0  auto;
+  position: absolute;
+  top: 40%;
+  transform: translate(-50%);
+  width: 25%;
+  z-index: 999;
+}
+
+.description-img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  width: 75%;
+
+  @include for-mobile-design() {
+    padding: 10px;
+  }
+}
+
+.description-page-info-section {
+  display: flex;
+  flex-direction: column;
+  padding: 2% 12%;
+  position: relative;
+  text-align: center;
+
+  @include for-mobile-design() {
+    padding: 0;
+  }
+}
+
+.description-header {
+  background-color: $description-header-bg-color;
+  border-radius: 3px;
+  font-size: $description-header-font-size;
+  padding: 10px 5px;
+
+  span {
+    color: $description-header-color;
+    font-size: $description-header-font-size;
+  }
+}
+
+.description-text,
+.description-user-select-value {
+  background-color: $description-header-bg-color;
+  border-radius: 3px;
+  padding: 25px 15px;
+}
+
+.description-text {
+  flex-grow: 1;
+}
+
+.description-quantity-select {
+  margin: 5px auto;
+  width: 80%;
+}
+
+.description-page-color-select {
+  margin: 5px auto 10px;
+  width: 80%;
+}
+
+.description-price {
+  background-color: $description-price-bg-color;
+  border-radius: 0 0 3px 3px;
+}
+
+.btn-add-to-cart {
+  margin: 10px auto;
+  width: 100%;
+  background-color: $add-to-cart-btn;
+
+  &:focus {
+    background-color: $add-to-cart-btn;
+  }
+}
+
+
+
+

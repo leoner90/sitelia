@@ -1,0 +1,67 @@
+@import 'variables';
+
+.cms-orders-titles {
+  border-bottom: 1px solid $cms-order-page-border-color;
+  margin-top: 50px;
+  padding-bottom: 12px;
+  padding-top: 10px;
+
+  div {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+
+    @include for-mobile-design() {
+      padding: 0;
+    }
+  }
+}
+
+.cms-hide-completed-label {
+  cursor: pointer;
+  font-size: $cms-hide-completed-label-font-size;
+  padding-right: 10px;
+}
+
+.cms-hide-completed-checkbox {
+  margin-left: 5px;
+
+  @include for-mobile-design() {
+    height: 8px;
+  }
+}
+
+.cms-orders-row > div {
+  border-bottom: 1px solid $cms-order-page-border-color;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-bottom: 12px;
+  padding-top: 10px;
+
+  @include for-mobile-design() {
+    padding: 0;
+  }
+}
+
+.cms-products-row {
+  border-bottom: 1px solid $cms-order-page-border-color;
+  padding-bottom: 12px;
+  padding-top: 10px;
+}
+
+.cms-order-view-btn {
+  font-size: $cms-order-view-btn-font-size;
+  font-weight: bold;
+  width: 100%;
+
+  @include for-mobile-design() {
+    padding: 3px 0;
+  }
+}
+
+.Pending {
+  color: $red;
+}
+
+.Completed {
+  color: $green;
+}

@@ -1,0 +1,86 @@
+//FONTS
+@font-face {
+  font-family: OpenSans;
+  src: url('fonts/OpenSans-SemiBoldItalic.ttf');
+}
+
+//MOBILE DESIGN
+$width-for-mobile-design: 768px;
+
+@mixin for-mobile-design() {
+  @media only screen and (max-width: $width-for-mobile-design) {
+    @content;
+  }
+}
+
+//COMMON COLORS
+$black: #000;
+$white: #fff;
+$red: #f00;
+$green: #008000;
+
+//COLORS MAIN SITE
+$more-info-btn: #2688ca;
+$add-to-cart-btn: #2688ca;
+$base-color: #ccc;
+$header-bg-color: #31323e;
+$main-menu-link: #bdbdbd;
+$footer-bg-color: #31323e;
+$footer-text-color: #ccc;
+$pop-up-bg: rgba(0, 0, 0, .7);
+$product-bg-color: #fff;
+$product-price-bg-color: #dcdcdc;
+$pop-up-wrapper-bg-color: #fff;
+$pop-up-border-color: #c0c0c0;
+$pop-up-wrapper-text-color: #a7a7a7;
+$pop-up-header-bg: #c0c0c0;
+$add-to-cart-preloader-bg-color: rgba(0, 0, 0, .8);
+$description-price-bg-color: #0000004f;
+$description-header-bg-color: #a0a0a0;
+$description-header-color: #a00000;
+$description-content-bg-color: #fff;
+$checkout-bg-color: rgba(0, 0, 0, .75);
+
+//COLORS CMS
+$cms-page-menu-li-bg-color: #333;
+$cms-page-menu-li-hover-color: rgba(76, 76, 76, .5);
+$cms-login-title-color: #1464a6;
+$cms-login-form-body-bg-color: #2a77b5;
+$cms-left-sidebar-bg-color: #222;
+$cms-main-bar-bg-color: #ececec;
+$cms-login-page-bg-color: #102537;
+$cms-page-header-bg-color: #222;
+$cms-hr-divider-bg-color: #7d7979;
+$cms-order-page-border-color: #ddd;
+$cms-change-product-new-old-color-border: #aaa;
+$cms-change-product-change-sections-bg: #ccc;
+$change-product-titles-bg: #999;
+$change-product-errors-bg: rgba(255, 0, 0, .55);
+
+//FONT SIZE MAIN SITE
+$main-font-size: 1vw;
+$main-mobile-font-size: 1.8vw;
+$main-menu-font-size: 12px;
+$slogan-mobile-font-size: 12px;
+$brand-name-font-size: 32px;
+$brand-name-mobile-font-size: 15px;
+$description-header-font-size: 1.4vw;
+$checkout-btn-font-sizes: 1vw;
+
+//FONT SIZE CMS
+$cms-nav-a-font-size: .7vw;
+$cms-login-error-font-size: .7vw;
+$log-out-btn-font-size: .6vw;
+$log-out-btn-mobile-font-size: 1.8vw;
+$cms-page-menu-mobile-font-size: 1.4vw;
+$cms-order-view-btn-font-size: .75vw;
+$cms-hide-completed-label-font-size: .8vw;
+$order-completed-btn-font-size: .8vw;
+$order-completed-btn-mobile-font-size: 1.4vw;
+$change-product-btn-font-size: .75vw;
+$change-product-btn-mobile-font-size: 1vw;
+$add-new-product-btn-font-size: 1.4vw;
+$change-product-errors-font-size: 12px;
+$change-product-errors-mobile-font-size: 12px;
+$mage-for-color-font-size: .8vw;
+$default-img-text-font-size: .8vw;

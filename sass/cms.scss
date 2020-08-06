@@ -1,0 +1,216 @@
+@import 'variables';
+
+//CMS LEFT BAR
+.cms-main-row {
+  display: flex;
+}
+.cms-left-sidebar {
+  background-color: $cms-left-sidebar-bg-color;
+  min-height: 100vh;
+  padding: 15px 5px;
+}
+
+.cms-logo {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.cms-hr-divider {
+  background-color: $cms-hr-divider-bg-color;
+  height: 2px;
+  margin-top: 40px;
+}
+
+.cms-nav-wrap {
+  padding-top: 50px;
+}
+
+.cms-nav-glyphicons {
+  color: $white;
+  font-size: $cms-nav-a-font-size;
+}
+
+.cms-nav {
+  padding: 0;
+
+  a {
+    color: $white;
+    font-size: $cms-nav-a-font-size;
+    padding-left: 3px;
+
+    &:active ,
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  li {
+    background-color: $cms-page-menu-li-bg-color;
+    display: block;
+    margin: 10px 0;
+    padding: 3px;
+    text-decoration: none;
+    width: 100%;
+
+    &:hover {
+      background-color: $cms-page-menu-li-hover-color;
+    }
+
+    a,
+    span {
+      @include for-mobile-design() {
+        font-size: $cms-page-menu-mobile-font-size;
+      }
+    }
+  }
+}
+//CMS MAIN BAR
+.cms-main-bar {
+  background-color: $cms-main-bar-bg-color;
+  min-height: 100vh;
+}
+
+.order-header {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.5vw;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 2%;
+}
+
+.cms-page-header {
+  background-color: $cms-page-header-bg-color;
+  margin: 0 -15px;
+  padding: 10px;
+  text-align: right;
+}
+
+.cms-content {
+  padding: 20px;
+}
+
+//CMS LOGIN
+.cms-login-page {
+  background-color: $cms-login-page-bg-color;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.cms-login-form-wrapper {
+  border-radius: 5px;
+  left: 50%;
+  margin: auto;
+  min-height: 200px;
+  min-width: 14%;
+  position: absolute;
+  top: 40%;
+  transform: translate(-50%, -40%);
+}
+
+.cms-login-form-body {
+  background-color: $cms-login-form-body-bg-color;
+  margin: 0 auto;
+  padding: 50px 35px;
+  position: relative;
+}
+
+.cms-login-errors {
+  color: $red;
+  display: none;
+  font-size: $cms-login-error-font-size;
+  text-align: center;
+}
+
+.cms-login-left-wing {
+  display: block;
+  height: 100%;
+  left: -193px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  width: 195px;
+  z-index: -1;
+
+  @include for-mobile-design() {
+    display: none;
+  }
+}
+
+.cms-login-right-wing {
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+  position: absolute;
+  right: -190px;
+  top: 0;
+  width: 195px;
+  z-index: -1;
+
+  @include for-mobile-design() {
+    display: none;
+  }
+}
+
+.cms-login-top-decor {
+  display: block;
+  height: 100%;
+  left: 50%;
+  margin: 0 auto;
+  position: absolute;
+  top: -240px;
+  transform: translateX(-50%);
+  width: 195px;
+
+  @include for-mobile-design() {
+    display: none;
+  }
+}
+
+.cms-login-title {
+  color: $cms-login-title-color;
+  padding: 15px;
+  text-align: center;
+}
+
+.cms-login-btn {
+  display: block;
+  margin: 40px auto 0;
+  min-width: 100%;
+  padding: 5px;
+}
+
+.cms-login {
+  margin: 5px;
+}
+
+.cms-password {
+  margin: 15px 5px;
+}
+
+.log-out-btn {
+  font-size: $log-out-btn-font-size;
+  margin-right: 15px;
+  padding: 4px 7px;
+
+  @include for-mobile-design() {
+    font-size: $log-out-btn-mobile-font-size;
+  }
+
+  span {
+    font-size: $log-out-btn-font-size;
+
+    @include for-mobile-design() {
+      font-size: $log-out-btn-mobile-font-size;
+    }
+  }
+}
+
+
+
+
+
+
+
+

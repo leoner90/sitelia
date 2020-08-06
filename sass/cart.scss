@@ -1,0 +1,98 @@
+@import 'variables';
+
+.cart-titles {
+  background-color: $white;
+  border: 1px solid $black;
+  margin: 5px 5%;
+  word-break: break-all;
+
+  @include for-mobile-design() {
+    margin: 5px;
+  }
+}
+
+.cart-order-row {
+  background-color: $white;
+  border: 1px solid $black;
+  margin: 5px 5%;
+  padding: 3px;
+  word-break: break-all;
+
+  @include for-mobile-design() {
+    margin: 5px;
+  }
+}
+
+.cart-order-img {
+  width: 30px;
+
+  @include for-mobile-design() {
+    width: 80%;
+  }
+}
+
+@include for-mobile-design() {
+  .delete-btn,
+  .checkout-btn {
+    font-size: $checkout-btn-font-sizes;
+  }
+
+  .cart-order-row > div,
+  .cart-titles > div {
+    padding: 0;
+
+  }
+}
+
+.cart-order-total-sum-wrapper {
+  padding-right: 5%;
+  text-align: right;
+
+  @include for-mobile-design() {
+    padding-right: 5px;
+  }
+}
+//CHECKOUT SECTION
+.checkout {
+  background-color: $checkout-bg-color;
+  border-radius: 5px;
+  margin: 10px auto;
+  padding: 25px 10px;
+  width: 55%;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.checkout-btn {
+  display: block;
+  margin: 15px auto 0;
+}
+
+//OMNIWIA WIDGET
+#omniva_container1 {
+  label {
+    color: $white;
+    padding: 5px;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+  }
+
+  .ow_table {
+    margin: 0 auto;
+  }
+}
+
+.ow_td input,
+.ow_td textarea {
+  width: 60%;
+}
+
+.ow_td textarea {
+  height: 35px;
+}

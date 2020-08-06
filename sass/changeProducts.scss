@@ -1,0 +1,148 @@
+@import 'variables';
+
+.change-product-page-wrapper {
+  padding: 0 15%;
+  position: relative;
+
+  @include for-mobile-design() {
+    padding: 0;
+  }
+}
+
+.save-product-preloader {
+  background: 0/100% 100% no-repeat;
+  border-radius: 10px;
+  bottom: 0;
+  display: none;
+  left: 0;
+  margin: 0 15%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 999;
+
+  @include for-mobile-design() {
+    margin: 0;
+  }
+}
+
+.change-product-titles {
+  background-color: $change-product-titles-bg;
+  border: 1px solid $black;
+  font-size: 1vw;
+  margin-top: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.change-product-description ,
+.change-product-name,
+.product-price {
+  background-color: $cms-change-product-change-sections-bg;
+  border: 1px solid $black;
+  padding: 10px;
+}
+
+.change-product-errors {
+  display: none;
+
+  p {
+    background-color: $change-product-errors-bg;
+    border-radius: 4px;
+    color: $black;
+    font-size: $change-product-errors-font-size;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 12px;
+    margin-top: 7px;
+    min-height: 12px;
+    padding: 4px 15px;
+
+    &::before {
+      background-image: url('../img/other/timingErr.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: '';
+      display: inline-block;
+      height: 12px;
+      width: 12px;
+    }
+  }
+}
+
+.add-color {
+  border: 1px solid $black;
+  margin: 0;
+  padding: 5px;
+
+  div {
+    @include for-mobile-design() {
+      padding: 2px;
+    }
+  }
+}
+
+.add-color:first-of-type .default-text::before {
+  color: $red;
+  content: 'DEFAULT';
+  font-size: $default-img-text-font-size;
+}
+
+.product-price {
+  padding: 3px;
+}
+
+.change-product-price {
+  margin: 0;
+  text-align: center;
+
+  &::after {
+    content: '$';
+  }
+}
+
+.change-product-glyphicon-edit {
+  cursor: pointer;
+}
+
+
+
+.image-for-color {
+  font-size: $mage-for-color-font-size;
+}
+
+.add-color-btn {
+  display: block;
+  margin: 5px auto;
+  width: 100%;
+}
+
+.save-btn {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.colors-container {
+  margin-top: 30px;
+}
+
+.color-image-preview {
+  height: 30px;
+
+  @include for-mobile-design() {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.delete-color-btn {
+  @include for-mobile-design() {
+    font-size: 1vw;
+  }
+}
+
+.new-color-name,
+.old-color {
+  border: 1px solid $cms-change-product-new-old-color-border;
+  border-radius: 3px;
+}

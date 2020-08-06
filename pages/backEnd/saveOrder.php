@@ -1,0 +1,13 @@
+<?php session_start();
+$orderDetails = $_POST['newOrderObject'];
+$address = $_POST['address'];
+$sum = $_POST['sum'];
+include '../bdConnect.php';
+$dbname = $hostingName."sitelia";
+$conn = new mysqli($servername, $username, $serverpassword, $dbname);
+date_default_timezone_set('Europe/London');
+$sTime = date("d-m-Y H:i:s");
+$sql = "INSERT INTO orders (orderDetails, address, sum, date) VALUES ('$orderDetails', '$address', '$sum', '$sTime')";
+$conn->query($sql);
+unset($_SESSION['product']);
+unset($_SESSION['i']);
